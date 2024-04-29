@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sedan:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'sedan', serif;
+    font-weight: 400;
+}
+p, a{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body {
+    width: clamp(50px, 80%, 3000px);
+    margin: auto;
+    box-sizing: content-box;
+}
+
+h1 {
+    padding: 10px 50px;
+    background-color: rgb(41, 12, 93);
+    text-align: center;
+    color: aliceblue;
+    margin-top: 30px;
+}
+
+nav {
+    background-color: black;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.a:hover{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+a {
+    padding-bottom: 5px;
+    font-size: larger;
+    color: white;
+}
+a:hover {
+    color: blue;
+}
+
+main {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+img {
+    width: 150px;
+
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+li>a {
+    color: black;
+}
+
+h2 {
+    padding: 10px 40px;
+    background-color: rgb(41, 12, 93);
+    color: aliceblue;
+    text-align: center;
+}
+
+.intro {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr auto;
+    padding: 20px;
+    align-items: center;
+}
+#country {
+    background-color: white;
+    color: rgba(31, 136, 10, 0.83);
+    font-weight: 600;
+}
+
+.resources {
+    display: grid;
+}
+
+.resources > div {
+   padding:  30px;
+
+}
+.resources > h2 {
+    align-self: self-start;
+}
+
+p {
+    font-size: larger;
+}
+
+footer {
+    padding: 20px 10px;
+    background-color: rgb(41, 12, 93);
+    text-align: center;
+    color: aliceblue;
+}
+
+#lastmodified {
+    color: yellowgreen;
+    font-size: 0.9rem;
+}
