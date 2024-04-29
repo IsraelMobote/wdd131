@@ -103,7 +103,7 @@ h2 {
     display: grid;
 }
 
-.resources > div {
+.resources > ul {
    padding:  30px;
 
 }
