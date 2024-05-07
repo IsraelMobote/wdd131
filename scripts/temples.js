@@ -8,3 +8,11 @@ year.innerHTML = today.getFullYear();
 
 // this statement is to get the last modified string in the footer
 lastModified.innerHTML = new Date(document.lastModified);
+
+const menu = document.querySelector("#menu");
+const navi = document.querySelector("nav");
+
+menu.addEventListener("click", function() {
+    menu.classList.toggle("show");
+    navi.classList.toggle("show");
+})
