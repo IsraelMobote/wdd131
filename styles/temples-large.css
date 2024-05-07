@@ -15,7 +15,8 @@
     }
 
     nav {
-        display: inline-flex;
+        display: inline;
+        display: flex;
         width: 600px;
         flex-wrap: nowrap;
         justify-content: space-between;
