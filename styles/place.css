@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sedan:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: hsl(61, 79%, 42%);
+    --secondary-color: hsl(133, 73%, 35%);
+    --tertiary-color: darkblue;
+    --primary-font: 'Rubik', Arial, sans-serif;
+    --secondary-font: 'sedan', 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-family: var(--secondary-font);
+}
+
+p {
+    font-family: var(--primary-color);
+}
+
+h1 {
+    padding: 1em 3em;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--tertiary-color);
+    font-weight: 800;
+    font-size: 3em;
+}
+
+header p {
+    height: 1em;
+    background-color: var(--tertiary-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid var(--tertiary-color);
+}
+
+h2 {
+    padding: 1.2em 0.4em 0.3em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#flex {
+    display: grid;
+}
+
+#flex img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.data1 {
+   text-align: end;
+}
+.data1 p {
+    font-size: 1em;
+    font-weight: 800;
+    padding: 0.3rem 0;
+}
+
+.data2 {
+    text-align: start;
+}
+
+.data2 p {
+    font-size: 1em;
+    padding: 0.3rem 0;
+}
+
+
+/* footer styling */
+footer {
+    padding: 20px 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: 1.4em;
+    margin-top: 50px;
+}
+
+#lastmodified {
+    font-size: 1.2rem;
+}

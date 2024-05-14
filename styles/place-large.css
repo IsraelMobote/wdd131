@@ -1,0 +1,73 @@
+@media screen and (min-width: 50rem) {
+    :root{
+        --primary-color: hsl(61, 79%, 42%);
+        --secondary-color: hsl(133, 73%, 35%);
+        --tertiary-color: darkblue;
+        --primary-font: 'Rubik', Arial, sans-serif;
+        --secondary-font: 'sedan', 'Times New Roman', serif;
+    }
+    
+
+    body {
+        box-sizing: content-box;
+        height: 100vh;
+    }
+
+    main {
+        position: relative;
+    }
+    #section1 {
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        left: 70px;
+        background-color: hsla(243, 76%, 95%, 0.774);
+        padding: 0 0.2rem 20px;
+    }
+
+    h1 {
+        padding: 25px 0;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #section1 h2 {
+        padding: 0 100px;
+        background-color: var(--secondary-color);
+        margin: 20px 0;
+        height: auto;
+        position: relative;
+        right: 25px;
+    }
+
+    #section2 {
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        right: 50px;
+        background-color: hsla(243, 76%, 95%, 0.774);
+        padding-bottom: 40px;
+    }
+
+/* the flex id is to arrange the h2 element in the second section with cloud logo*/
+
+    #flex {
+        display: flex;
+        background-color: var(--secondary-color);
+        height: fit-content;
+        margin: 30px 0;
+        position: relative;
+        right: 20px;
+    }
+
+    #flex h2 {
+        align-self: center;
+    }
+
+    footer {
+        margin: 0;
+    }
+}

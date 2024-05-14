@@ -20,6 +20,7 @@
         width: 600px;
         flex-wrap: nowrap;
         justify-content: space-between;
+        background-color: rgba(72, 8, 131, 0.918);
     }
 
     nav > a {

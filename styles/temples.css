@@ -36,10 +36,15 @@ h1 {color: white; text-align: start; padding-bottom: 1em;}
 
 nav.show {
     display: block;
-    background-color: rgba(182, 20, 142, 0.822);
 }
 
-nav a {
+nav{
+    position: absolute;
+    background-color: rgb(182, 20, 142);
+}
+
+a  {
+    width: 90vw;
     font-size: larger;
     font-weight: 400;
     display: block;
@@ -53,6 +58,7 @@ nav a {
     color: aliceblue;
     background-color: rgb(18, 18, 207);
     font-size: 1.4em;
+    display: block;
 }
 
 nav {
@@ -62,6 +68,7 @@ nav {
 main {
     margin: 0 auto;
     max-width: 90%;
+    z-index: 0;
 }
 h2 {
     padding: 1em;
