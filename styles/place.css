@@ -16,7 +16,7 @@
     --primary-font: 'Rubik', Arial, sans-serif;
     --secondary-font: 'sedan', 'Times New Roman', serif;
 }
-
+/* this is for the font declaration on the website using css variables and google fonts*/
 h1, h2 {
     font-family: var(--secondary-font);
 }
@@ -25,6 +25,7 @@ p {
     font-family: var(--primary-color);
 }
 
+/*this is for the main header h1 styling*/
 h1 {
     padding: 1em 3em;
     background-color: var(--primary-color);
@@ -34,29 +35,31 @@ h1 {
     font-size: 3em;
 }
 
-header p {
-    height: 1em;
-    background-color: var(--tertiary-color);
-}
-
+/*this styling is for the hero image*/
 img {
     width: 100%;
     height: auto;
+    border-top: 1.5rem solid var(--tertiary-color);
     border-bottom: 10px solid var(--tertiary-color);
 }
 
+/*this styling is for the h2 element*/
 h2 {
     padding: 1.2em 0.4em 0.3em;
     text-align: center;
     font-size: 2em;
 }
 
+
+/*this class below is to style the posters columns to have a grid layout*/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
 
+
+/* this id (flex) is for the weather heading and its associated image*/
 #flex {
     display: grid;
 }
@@ -66,7 +69,8 @@ h2 {
     height: auto;
     margin: 0 auto 20px;
 }
-
+ 
+/* this is the styling that aligns the two columns in the data and weather posters*/
 .data1 {
    text-align: end;
 }
