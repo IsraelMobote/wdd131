@@ -9,15 +9,17 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-color: hsl(61, 79%, 42%);
     --secondary-color: hsl(133, 73%, 35%);
     --tertiary-color: darkblue;
     --primary-font: 'Rubik', Arial, sans-serif;
     --secondary-font: 'sedan', 'Times New Roman', serif;
 }
+
 /* this is for the font declaration on the website using css variables and google fonts*/
-h1, h2 {
+h1,
+h2 {
     font-family: var(--secondary-font);
 }
 
@@ -56,6 +58,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
+    padding-right: 1rem;
 }
 
 
@@ -69,11 +72,16 @@ h2 {
     height: auto;
     margin: 0 auto 20px;
 }
- 
+
+#weather::before {
+    display: none;
+}
+
 /* this is the styling that aligns the two columns in the data and weather posters*/
 .data1 {
-   text-align: end;
+    text-align: end;
 }
+
 .data1 p {
     font-size: 1em;
     font-weight: 800;
