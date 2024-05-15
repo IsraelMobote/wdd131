@@ -24,7 +24,7 @@ h2 {
 }
 
 p {
-    font-family: var(--primary-color);
+    font-family: var(--primary-font);
 }
 
 /*this is for the main header h1 styling*/
