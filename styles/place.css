@@ -73,7 +73,7 @@ h2 {
     margin: 0 auto 20px;
 }
 
-#weather::before {
+#weather::after {
     display: none;
 }
 
