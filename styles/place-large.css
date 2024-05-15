@@ -72,7 +72,7 @@
         display: none;
     }
 
-    #weather::before {
+    #weather::after {
         display: inline;
         content: "⛅";
         font-size: 1.7rem;
