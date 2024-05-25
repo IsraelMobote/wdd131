@@ -116,7 +116,7 @@ function createCard(temp) {
     templeCard.append(dedicateDate);
 
     let size = document.createElement("p");
-    size.innerHTML = `<span>Size</span>: ${temp.area}`;
+    size.innerHTML = `<span>Size</span>: ${temp.area} sq.ft`;
     templeCard.append(size);
 
     let image = document.createElement("img");
