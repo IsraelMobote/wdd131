@@ -17,10 +17,10 @@
     nav {
         display: inline;
         display: flex;
-        width: 600px;
+        max-width: 500px;
         flex-wrap: nowrap;
         justify-content: space-between;
-        background-color: rgba(72, 8, 131, 0.918);
+        background-color: rgba(53, 8, 95, 0.918);
     }
 
     nav > a {

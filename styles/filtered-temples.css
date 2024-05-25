@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: rgba(72, 8, 131, 0.918);
+    background-color: rgba(47, 10, 82, 0.973);
     padding: 1em;
 }
 
@@ -40,11 +40,11 @@ nav.show {
 
 nav{
     position: absolute;
-    background-color: rgb(182, 20, 142);
+    background-color: brown;
 }
 
 section {
-    background-color: whitesmoke;
+    background-color: rgb(243, 224, 224);
     padding: 0 1.2rem;
     border: 1px solid rgba(0, 0, 0, 0.247);
    
@@ -61,7 +61,7 @@ section p {
 
 span {
     font-size: 0.91rem;
-    color: blueviolet;
+    color: rgb(47, 6, 85);
 }
 
 a  {
