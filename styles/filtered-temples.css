@@ -117,10 +117,14 @@ footer {
     padding: 20px 10px;
     background-color: rgb(41, 12, 93);
     text-align: center;
-    color: aliceblue;
+    color: rgb(252, 255, 240);
 }
 
-#lastmodified {
-    color: yellowgreen;
+#currentyear {
+    color: rgb(252, 255, 240);;
+}
+
+#lastModified {
+    color: white;
     font-size: 0.9rem;
 }

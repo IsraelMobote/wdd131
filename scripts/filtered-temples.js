@@ -1,13 +1,3 @@
-const year = document.querySelector("#currentyear");
-
-let lastModified = document.querySelector("#lastModified")
-
-const today = new Date();
-// this statement below is to get the current year in the footer
-year.innerHTML = today.getFullYear();
-
-// this statement is to get the last modified string in the footer
-lastModified.innerHTML = new Date(document.lastModified);
 
 const temples = [
     {
@@ -236,7 +226,17 @@ function newff() {
       });
     };
 
+    const footeryear = document.querySelector("#currentyear");
 
+    let lastModified = document.querySelector("#lastModified")
+    
+    const today = new Date();
+    // this statement below is to get the current year in the footer
+    footeryear.innerHTML = today.getFullYear();
+    
+    // this statement is to get the last modified string in the footer
+    lastModified.innerHTML = new Date(document.lastModified);
+    
 
 
 
