@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(72, 8, 131, 0.918);
+    padding: 1em;
+}
+
+h1, h2 {
+    font-family: 'Old Standard TT', Times, serif;
+}
+a, p {
+    font-family: 'Exo 2',Helvetica, sans-serif;
+}
+
+h1 {color: white; text-align: start; padding-bottom: 1em;}
+#menu::before {
+    content: "≡";
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+}
+#menu.show::before {
+    content: "❌";
+}
+
+nav.show {
+    display: block;
+}
+
+nav{
+    position: absolute;
+    background-color: rgb(182, 20, 142);
+}
+
+section {
+    background-color: whitesmoke;
+    padding: 0 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+   
+}
+
+img {
+    margin: 1rem 0;
+    box-shadow: inset;
+}
+
+section p {
+    text-align: center;
+}
+
+span {
+    font-size: 0.91rem;
+    color: blueviolet;
+}
+
+a  {
+    width: 90vw;
+    font-size: larger;
+    font-weight: 400;
+    display: block;
+    padding: 0.8em 0;
+    border: 1px solid rgb(84, 84, 199) ;
+    text-align: center;
+    color: white;
+}
+
+.show a:active, .show a:hover {
+    color: aliceblue;
+    background-color: rgb(18, 18, 207);
+    font-size: 1.4em;
+    display: block;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 90%;
+    z-index: 0;
+}
+h2 {
+    padding: 1em;
+    text-align: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+img {
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+    color: blue;
+}
+footer {
+    margin-top: 20px;
+    padding: 20px 10px;
+    background-color: rgb(41, 12, 93);
+    text-align: center;
+    color: aliceblue;
+}
+
+#lastmodified {
+    color: yellowgreen;
+    font-size: 0.9rem;
+}
