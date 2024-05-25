@@ -131,7 +131,8 @@ function createCard(temp) {
 
     let image = document.createElement("img");
     image.src = (temp.imageUrl);
-    image.loading = ("lazy");
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("alt", temp.templeNam);
     templeCard.append(image);
 
     return templeCard;
