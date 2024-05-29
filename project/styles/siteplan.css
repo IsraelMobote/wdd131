@@ -52,6 +52,7 @@ p {
 
 table {
     margin: 0 auto;
+    width: clamp(300px, 80%, 700px);
 
 }
 
