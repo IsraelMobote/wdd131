@@ -57,7 +57,7 @@ table {
 }
 
 th {
-    padding: 20px ;
+    padding: 20px 0;
     background-color: rgba(255, 254, 254, 0.993);
     word-wrap: break-word;
 }
