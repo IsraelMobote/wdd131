@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(47, 7, 85);
+    margin-bottom: 4rem;
+}
+h1, h2 {
+    font-family: 'AR One Sans', Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 254, 254, 0.993);
+    color: rgb(71, 32, 9);
+    padding: 0.5rem 1rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    width: clamp(200px, 70%, 1000px);
+}
+
+#logo{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+#green {
+    color: rgb(67, 184, 13);
+}
+
+h2 {
+    color: rgb(71, 32, 9);
+    width: clamp(200px, 60%, 1000px);
+    border-radius: 10px 10px 0 0;
+    margin: 3rem auto 0;
+}
+
+p {
+    font-family: 'Noto Serif','Times New Roman', serif;
+    font-weight: 600;
+    background-color: rgba(255, 254, 254, 0.993);
+    padding: 0.8rem 1rem 0;
+    margin: 0 auto;
+    width: clamp(200px, 80%, 1000px);
+}
+
+table {
+    margin: 0 auto;
+
+}
+
+th {
+    padding: 20px 3px;
+    background-color: rgba(255, 254, 254, 0.993);
+    word-wrap: break-word;
+}
+
+.BackgroundColor {
+    background-color: rgb(47, 7, 85);
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.accentColor1 {
+    background-color: rgba(255, 254, 254, 0.993);
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.accentColor2 {
+    background-color: rgb(67, 184, 13);
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.Headings{
+    background-color: rgb(71, 32, 9);
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.Paragraphs{
+    background-color: black;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+figure {
+    margin-top: 2rem;
+}
+
+figcaption {
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Noto Serif','Times New Roman', serif;
+    font-size: larger;
+    color: black;
+    background-color: rgba(255, 254, 254, 0.993)
+}
