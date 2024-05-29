@@ -18,7 +18,7 @@ h1, h2 {
     font-family: 'AR One Sans', Arial, Helvetica, sans-serif;
     background-color: rgba(255, 254, 254, 0.993);
     color: rgb(71, 32, 9);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.2rem;
     margin: 3rem auto;
     border-radius: 10px;
     width: clamp(200px, 70%, 1000px);
@@ -45,7 +45,7 @@ p {
     font-family: 'Noto Serif','Times New Roman', serif;
     font-weight: 600;
     background-color: rgba(255, 254, 254, 0.993);
-    padding: 0.8rem 1rem 0;
+    padding: 0.8rem 0.5rem 0;
     margin: 0 auto;
     width: clamp(200px, 80%, 1000px);
 }
@@ -57,7 +57,7 @@ table {
 }
 
 th {
-    padding: 20px 3px;
+    padding: 20px ;
     background-color: rgba(255, 254, 254, 0.993);
     word-wrap: break-word;
 }
