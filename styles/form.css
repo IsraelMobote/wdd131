@@ -68,12 +68,16 @@ legend {
     font-weight: 800;
 }
 
-input[type=text], input[type=date], select {
+input[type=text], input[type=date], select, textarea {
     display: block;
     padding: 10px;
     width: 80%;
     margin: auto;
     font-size: 1rem;
+}
+
+textarea {
+    height: 5rem;
 }
 
 label div {
