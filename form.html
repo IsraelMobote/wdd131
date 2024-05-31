@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="form" action="get" action="review.html">
+            <label>Product Name
+                <select name="productName">
+                    <option value="" disabled selected>Choose a Product ....</option>
+                </select>
+            </label>
+            <fieldset id="test">
+                <legend>Overall Rating</legend>
+                <label><div class="test">⭐</div><input type="radio" name="rating"></label>
+                <label><div class="test">⭐⭐</div><input type="radio" name="rating" ></label>
+                <label><div class="test">⭐⭐⭐</div><input type="radio" name="rating"></label>
+                <label><div class="test">⭐⭐⭐⭐</div><input type="radio" name="rating"></label>
+                <label><div class="test">⭐⭐⭐⭐⭐</div><input type="radio" name="rating"></label>
+            </fieldset>
+            <label>Date of Installation
+                <input type="date">
+            </label>
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <div id="italic">(check all that apply)</div>
+                <label class="radio"><input  type="checkbox">Durability</label>
+                <label class="radio"><input type="checkbox">Ease of Use</label>
+                <label class="radio"><input type="checkbox">Performance</label>
+                <label class="radio"><input type="checkbox">Design</label>
+            </fieldset>
+            <label><div>Written Review<span>(optional)</span></div><input type="text"></label>
+            <label><div>Your Name<span>(optional)</span><input type="text"></div></label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ✨ Israel Silas Mobote ✨ Nigeria</p>
+        <p id="lastmodified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

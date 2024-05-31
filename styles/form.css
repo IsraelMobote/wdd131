@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: navy;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    color: antiquewhite;
+}
+
+form {
+    background-color: rgb(116, 106, 211);
+    padding: 5%;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label{
+    padding: 5px 10px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+span{
+    font-size: 0.9rem;
+    color: blue;
+}
+
+input[type=checkbox] {
+    margin:  10px;
+}
+
+.radio {
+    display: block;
+}
+
+fieldset {
+    margin: 10px 0;
+}
+
+#test {
+    margin: 20px 0 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.test {
+    font-size: .75rem;
+}
+
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+
+legend {
+    color: black;
+    font-size: 1.2rem;
+}
+
+input[type=text], input[type=date], select {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+label div {
+    margin-top: 8px;
+}
+
+input[type=submit] {
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    align-self: center;
+}
+
+/* footer styling */
+footer {
+    padding: 20px 10px;
+    background-color: navy;
+    text-align: center;
+    color: black;
+    font-size: 1.4em;
+    margin-top: 50px;
+}
+
+#lastmodified {
+    font-size: 1.2rem;
+    font-variant: small-caps;
+}
+
+
+
+
+
+
+

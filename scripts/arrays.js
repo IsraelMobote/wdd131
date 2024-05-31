@@ -1,43 +1,29 @@
-const steps = ["one", "two", "three"];
-function listTemplate(step) {
-  return   `<li>${step}</li>`
-}
-const stepsHtml = steps.map(listTemplate);
-
-document.querySelector("#myList").innerHTML = stepsHtml.join("");
-
-grades = ['A','B','A']
-
-function getGPA(grade) {
-    let point = 0
-    if (grade === "A") {
-        point = 4;
-    }
-    else if (grade === "B") {
-        point = 3;
-    }
-    return point;
-}
-
-const points = grades.map(getGPA);
-
-console.log(points);
-
-const gpa = points.reduce((total,value) => total + value) / points.length;
-
-console.log(gpa.toFixed(2));
-const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+function calculate(a, b, callback) {
+    callback(a + b);
+  }
+  
+  function displayResult(result) {
+    console.log('The result is: ' + result);
+  }
 
 
-const fruitsNew =  fruits.filter((fruit) => fruit.length < 6);
+calculate(2,3,displayResult)
 
-console.log(fruitsNew);
-
- const array = [12, 34, 21, 54];
- const luckyNumber = 21;
-
- let luckyIndex = array.indexOf(luckyNumber);
- console.log(luckyIndex);
+function fetchData(callback) {
+    // using setTimeout to simulate fetching data from a server
+    setTimeout(() => {
+      // This calls the 'callback' function and passes data to it.
+      callback('Data has been fetched');
+    }, 2000); // This simulates a 2-second delay from a service.
+  }
+  
+  // function that processes the data
+  function processData(data) {
+    console.log("Data received:", data);
+  }
+  
+  // Call the fetchData function and pass the processData function as an argument.
+  fetchData(processData);
 
 
 
