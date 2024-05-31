@@ -9,25 +9,28 @@ header {
     padding: 20px 0;
     margin-bottom: 30px;
     color: antiquewhite;
+    
 }
 
 form {
-    background-color: rgb(116, 106, 211);
+    background-color: rgba(83, 73, 170, 0.445);
     padding: 5%;
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 label{
     padding: 5px 10px;
-    color: whitesmoke;
+    color: black;
     font-size: 1.2rem;
+    font-weight: 400;
 }
 
 span{
     font-size: 0.9rem;
-    color: blue;
+    color: rgb(15, 15, 105);
 }
 
 input[type=checkbox] {
@@ -62,6 +65,7 @@ input[type=radio] {
 legend {
     color: black;
     font-size: 1.2rem;
+    font-weight: 800;
 }
 
 input[type=text], input[type=date], select {
@@ -90,7 +94,7 @@ footer {
     padding: 20px 10px;
     background-color: navy;
     text-align: center;
-    color: black;
+    color: whitesmoke;
     font-size: 1.4em;
     margin-top: 50px;
 }
