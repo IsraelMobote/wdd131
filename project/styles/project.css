@@ -69,6 +69,8 @@ header {
     margin: 3rem 0;
 }
 
+
+
 .sectionOne h1 {
     color: var(--backgroundColor);
     font-family: var(--headingsFont);
@@ -154,4 +156,29 @@ header {
     width: 100px;
     display: block;
     margin: 0 auto 8px;
+}
+
+.sectionThree {
+    font-family: var(--headingsFont);
+    color: var(--backgroundColor);
+}
+
+.sectionThree h2 {
+    font-size: 1.9rem;
+    margin-left: 1rem;
+}
+
+.sectionThree .liner {
+    background-color: var(--paragraphColor);
+    height: 0.4rem;
+    width: 30%;
+    margin-left: 1.1rem;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.sectionThree p {
+    font-family: var(--paragraphFont);
+    padding: 15px 1.2rem 10px;
+    font-size: 1.5rem;
 }
