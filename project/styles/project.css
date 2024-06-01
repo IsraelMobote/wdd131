@@ -138,18 +138,17 @@ header {
 .sectionTwo div h2{
     font-family: var(--headingsFont);
     color: var(--backgroundColor);
-    padding: 10px;
+    padding: 10px 10px 4rem;
     text-align: center;
-    height: 2.5rem;
+}
 
+#offering {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4.5rem;
 }
 
 
-.offerings {
-    padding-top: 15px;
-    margin: 0;
-    height: 14rem;
-}
 
 .offerings  span{
     display: block;
@@ -166,11 +165,10 @@ header {
     color: var(--linerColor);
 }
 
-.offerings img {
+.offerings .img {
     width: 100px;
     display: block;
-    margin: 0 auto 8px;
-    padding-top: 20px;
+    margin: 0px auto 8px;
 }
 
 .sectionThree {
@@ -247,12 +245,14 @@ header {
     color: var(--backgroundColor);
 }
 
+.sectionFive {
+    padding: 2rem 0;
+}
 .sectionFive h2{
     font-family: var(--headingsFont);
     font-size: 1.9rem;
     color: var(--linerColor);
     padding: 10px 20px 4px;
-    margin-top: 2rem;
 }
 
 .sectionFive .liner {
@@ -274,3 +274,38 @@ header {
     color: var(--linerColor);
     font-weight: 700;
 }
+
+.sectionSix {
+    border: 0.7rem solid var(--backgroundColor);
+    font-family: var(--headingsFont);
+}
+
+.sectionSix p {
+    font-size: 1.5rem;
+    padding: 10px 20px 8px;
+}
+
+.sectionSix p span {
+    color: var(--paragraphColor);
+    font-weight: 700;
+}
+
+.sectionSix .button {
+    background-color: var(--backgroundColor);
+    color: white;
+    width: fit-content;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionSix .button a {
+    color: white;
+}
+
+
+#whatsApp {
+    padding: 0 10px;
+}
+
