@@ -170,6 +170,7 @@ header {
     width: 100px;
     display: block;
     margin: 0 auto 8px;
+    padding-top: 20px;
 }
 
 .sectionThree {
@@ -211,4 +212,33 @@ header {
     color: white;
     padding: 10px;
     border-radius: 10px;
+}
+
+.sectionFour {
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.sectionFour h2 {
+    font-family: var(--headingsFont);
+    text-align: center; 
+    padding: 0.5rem;
+}
+
+.sectionFour p {
+    font-family: var(--paragraphFont);
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.sectionFour .link {
+    font-weight: 700;
+    background-color: white;
+    color: var(--backgroundColor);
+    width: 15rem;
+    margin: 1rem auto 0;
+    border-radius: 15px;
 }
