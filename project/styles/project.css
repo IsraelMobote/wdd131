@@ -9,7 +9,8 @@
 :root {
     --headingsFont : 'AR One Sans', Arial, Helvetica, sans-serif;
     --paragraphFont :  'Noto Serif','Times New Roman', serif;
-    --backgroundColor : rgb(47, 7, 85);
+    --paragraphColor : ;
+    --backgroundColor : rgb(24, 24, 95);
     --linerColor : rgba(58, 146, 17, 0.986);
 }
 
@@ -24,7 +25,7 @@ header {
 .header {
     font-family: var(--headingsFont);
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     padding: 10px 10px;
     margin: 15px 0 0 -50px;
     width: 30%;
@@ -35,7 +36,7 @@ header {
 }
 
 #logo{
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-style: italic;
     font-weight: 800;
     padding-left: 30px;
