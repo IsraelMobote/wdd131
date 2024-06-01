@@ -41,7 +41,7 @@ header {
     font-weight: 600;
     font-size: 0.9rem;
     padding: 10px 1px;
-    margin: 15px 0 0 -50px;
+    margin: 15px 0 0 -10px;
     width: 30%;
     color: white;
     text-align: center;
@@ -195,4 +195,20 @@ header {
     font-family: var(--paragraphFont);
     padding: 15px 1.2rem 10px;
     font-size: 1.5rem;
+}
+
+.sectionThree p span {
+    color: var(--paragraphColor);
+    font-weight: 600;
+}
+
+.sectionThree .link {
+    margin-top: 2rem;
+}
+
+.sectionThree p a {
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
