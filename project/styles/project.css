@@ -237,8 +237,11 @@ header {
 .sectionFour .link {
     font-weight: 700;
     background-color: white;
-    color: var(--backgroundColor);
     width: 15rem;
     margin: 1rem auto 0;
     border-radius: 15px;
+}
+
+.sectionFour .link a {
+    color: var(--backgroundColor);
 }
