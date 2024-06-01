@@ -12,6 +12,7 @@
     --paragraphColor: rgba(238, 155, 30, 0.932);
     --backgroundColor: rgb(24, 24, 95);
     --linerColor: rgba(58, 146, 17, 0.986);
+    --webkit-transition: height 2s;
 }
 
 body {
