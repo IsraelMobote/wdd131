@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --headingsFont : 'AR One Sans', Arial, Helvetica, sans-serif;
+    --paragraphFont :  'Noto Serif','Times New Roman', serif;
+    --backgroundColor : rgb(47, 7, 85);
+    --linerColor : rgba(58, 146, 17, 0.986);
+}
+
+
+header {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+.header {
+    font-family: var(--headingsFont);
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 10px 10px;
+    margin: 15px 0 0 -50px;
+    width: 30%;
+    color: white;
+    text-align: center;
+    background-color: var(--backgroundColor);
+    border-radius: 15px;
+}
+
+#logo{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+#green {
+    color: rgb(67, 184, 13);
+}
+
+#menu::before {
+    content: "≡";
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 0 10px 0;
+    margin-right: 0;
+    font-size: 3rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.7rem;
+}
+
+.heroImage {
+    height: 20rem;
+    background-color: var(--backgroundColor);
+}
+
+.sectionOne {
+    margin: 3rem 0;
+}
+
+.sectionOne h1{
+    color: var(--backgroundColor);
+    font-family: var(--headingsFont);
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.sectionOne .liner {
+    background-color: var(--linerColor);
+    height: 0.4rem;
+    width: 30%;
+    margin-left: 1.1rem;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.sectionOne h1 span {
+    color: var(--linerColor);
+}
+
+.sectionOne p {
+    font-family: var(--paragraphFont);
+    font-size: 1.7rem;
+    padding: 2rem 0 0.2rem 1.9rem;
+}
+
+.sectionOne P span {
+    color: var(--linerColor);
+    font-weight: 600;
+}
