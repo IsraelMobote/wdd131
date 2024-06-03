@@ -42,9 +42,9 @@ header .header {
     font-family: var(--headingsFont);
     font-weight: 600;
     font-size: 1rem;
-    padding: 10px 1px;
+    padding: 10px 3px;
     margin: 15px 0 0 -10px;
-    width: 30%;
+    width: 20%;
     color: white;
     text-align: center;
     background-color: var(--backgroundColor);
