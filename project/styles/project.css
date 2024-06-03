@@ -344,6 +344,7 @@ nav.show {
 
 .sectionSix .button a {
     color: white;
+    z-index: 0;
 }
 
 
