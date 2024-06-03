@@ -178,7 +178,7 @@ nav.show {
     display: grid;
     height: fit-content;
     grid-template-columns: 1fr;
-    row-gap: 4rem;
+    row-gap: 2.5rem;
 }
 
 
