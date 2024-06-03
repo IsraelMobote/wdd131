@@ -66,7 +66,7 @@ nav a {
     color: white;
     width: 70%;
     padding:  20px 50px 20px;
-
+    text-decoration: none;
 }
 
 #logo {
@@ -334,6 +334,7 @@ nav.show {
 }
 
 .sectionSix .button {
+    font-size: 1rem;
     background-color: var(--backgroundColor);
     color: white;
     width: fit-content;
@@ -344,8 +345,10 @@ nav.show {
 }
 
 .sectionSix .button a {
+    font-size: 1.5rem;
     color: white;
     z-index: 0;
+    text-decoration: none;
 }
 
 
@@ -373,7 +376,7 @@ footer nav a {
     color: white;
     width: 70%;
     padding:  20px 50px 20px;
-
+    text-decoration: none;
 }
 
 
