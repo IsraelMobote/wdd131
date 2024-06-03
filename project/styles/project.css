@@ -41,7 +41,7 @@ header {
 header .header {
     font-family: var(--headingsFont);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 1px;
     margin: 15px 0 0 -10px;
     width: 30%;
@@ -51,14 +51,22 @@ header .header {
     border-radius: 15px;
 }
 
- nav a {
+
+nav {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: 1fr;
+}
+ a {
     font-family: var(--headingsFont);
     font-size: 1.5rem;
     display: block;
     color: white;
-    height: fit-content;
     width: 70%;
     padding:  20px 50px 20px;
+    z-index: 4;
+
 }
 
 #logo {
@@ -96,14 +104,18 @@ nav{
 }
 nav.show {
     display: block;
-    border-bottom: 10px solid white;
+    height: fit-content;
+    padding: 3rem 0;
     background-color: var(--backgroundColor);
+    position: fixed;
+    width: 100%;
 }
 
 .heroImage {
     height: 20rem;
     background-color: var(--backgroundColor);
 }
+
 
 .sectionOne {
     margin: 3rem 0;
@@ -159,7 +171,6 @@ nav.show {
     height: 65rem;
     background-color: white;
     border-radius: 20px;
-    position: relative;
     width: 90%;
 }
 
