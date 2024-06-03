@@ -58,7 +58,7 @@ nav {
 
     grid-template-columns: 1fr;
 }
- a {
+nav a {
     font-family: var(--headingsFont);
     font-size: 1.5rem;
     display: block;
@@ -351,3 +351,20 @@ nav.show {
     padding: 0 10px;
 }
 
+
+footer {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    margin-top: 15rem;
+}
+
+footer nav  {
+    display: block;
+    padding: 2rem 0;
+}
+
+footer p {
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.479)
+}
