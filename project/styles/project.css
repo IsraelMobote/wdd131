@@ -22,19 +22,16 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 70px;
-    padding-bottom: 10px;
-    margin-bottom: 1rem;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 2;
+    padding-bottom: 1.5rem;
 }
 
 #dd {
-    height: 70px;
+    height: 80px;
     background-color: white;
-    z-index: 0;
 }
 
 
@@ -52,20 +49,23 @@ header .header {
 }
 
 
-nav {
+.highindex {
     position: relative;
     display: grid;
-
+    z-index: 55;
     grid-template-columns: 1fr;
 }
+
 nav a {
+    display: none;
+}
+.highindex.show .a {
     font-family: var(--headingsFont);
     font-size: 1.5rem;
     display: block;
     color: white;
     width: 70%;
     padding:  20px 50px 20px;
-    z-index: 4;
 
 }
 
@@ -107,6 +107,7 @@ nav.show {
     height: fit-content;
     padding: 3rem 0;
     background-color: var(--backgroundColor);
+    top: 100px;
     position: fixed;
     width: 100%;
 }
@@ -362,7 +363,19 @@ footer {
 footer nav  {
     display: block;
     padding: 2rem 0;
+    z-index: 1;
 }
+
+footer nav a {
+    font-family: var(--headingsFont);
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    width: 70%;
+    padding:  20px 50px 20px;
+
+}
+
 
 footer p {
     font-size: 1.3rem;
