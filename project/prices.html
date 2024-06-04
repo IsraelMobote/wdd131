@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices page</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header> 
+        <p id="logo">f<span>💡</span>nix<span id=green>Co</span></p>
+        <p class="header">Start Today</p>
+        <p id="menu"></p>
+        <div></div>
+    </header>
+    <div id="dd"></div>
+    <nav class="highindex">
+        <a class="a" href="project.html">Home</a>
+        <a  class="a" href="">About Us</a>
+        <a class="a" href="project.html">Our Prices</a>
+        <a class="a" href="">Four-Way Process</a>
+    </nav>
+    <main class="prices">
+        <h1>Prices Section</h1>
+        <section class="pricesection1">
+            <p>At finix solutions, we provide quality and scalable websites that meet required standards,
+                at <span>right price</span>
+            </p>
+            <p>To get the price for your desired website, please use our price calculator below.</p>
+        </section>
+        <section class="pricesection2">
+            <h2>Price Calculator</h2>
+            <form>
+                <fieldset>
+                    <legend>Website Category</legend>
+                    <label id="basic"><input type="radio" name="category" required> Basic( 3-page website )</label>
+                    <label id="standard"><input type="radio" name="category" required> Standard( 5-page website )</label>
+                    <label id="elite"><input type="radio" name="category" required> Elite( 7-page website )</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment plan</legend>
+                    <label id="once"><input type="radio" name="paymentPlan" required>once</label>
+                    <label id="two"><input type="radio" name="paymentPlan" required>twice in 2 months</label>
+                    <label id="three"><input type="radio" name="paymentPlan" required>three times in 3 months</label>
+                    <label id="four" ><input type="radio" name="paymentPlan" required>four times in four months</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Hosting Plan</legend>
+                    <label id="oney" ><input type="radio" name="hosting" required>1 year</label>
+                    <label id="twoy" ><input type="radio" name="hosting" required>2 years</label>
+                    <label id="threey"><input type="radio" name="hosting" required>3 years</label>
+                    <label id="fivey"><input type="radio" name="hosting" required>5 years</label>
+                </fieldset>
+                <label><input id="button" type="button" name="button" value="get price"></label>
+            </form>
+        </section>
+        <section class="pricesection3">
+            <table>
+                <tr><th colspan="2">Price Summary</th></tr>
+                <tr>
+                    <td>Website price</td>
+                    <td><span id="websitePrice"></span>,000 </td>
+                <tr>
+                    <td>Price for <span></span>hosting</td>
+                    <td><span id="hosting"></span>,000 </td></tr>
+                <tr>
+                    <td>Total</td>
+                    <td><span id="total"></span>,000 </td></tr>
+                <tr>
+                    <td>Initial 40% payment</td>
+                    <td><span id="initial"></span>,000 </td></tr>
+                <tr>
+                    <td>Payment after website has been completed</td>
+                    <td><span id="monthly payment"></span>,000 <span id="installmenDescription"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <nav >
+       <a href="prices.html">Home</a>
+       <a href="">About Us</a>
+       <a href="project.html">Our Prices</a>
+       <a href="">Four-Way Process</a>
+       <a href="">Attributions</a>
+   </nav>
+       <p>©<span id="currentyear"></span> ✨ Israel Silas Mobote ✨ Nigeria</p>
+
+   </footer>
+</body>
+</html>

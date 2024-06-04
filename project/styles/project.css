@@ -9,9 +9,9 @@
 :root {
     --headingsFont: 'AR One Sans', Arial, Helvetica, sans-serif;
     --paragraphFont: 'Noto Serif', 'Times New Roman', serif;
-    --paragraphColor: rgba(238, 155, 30, 0.932);
+    --paragraphColor: rgba(165, 102, 8, 0.986);
     --backgroundColor: rgb(24, 24, 95);
-    --linerColor: rgba(58, 146, 17, 0.986);
+    --linerColor: rgba(39, 107, 7, 0.986);
     --webkit-transition: height 2s;
 }
 
@@ -19,6 +19,8 @@ body {
     position: relative;
 }
 
+
+/*-----------------Header styling----------------*/
 header {
     display: flex;
     width: 100%;
@@ -82,6 +84,9 @@ nav a {
     color: rgb(67, 184, 13);
 }
 
+
+/*-----------------Menu button Styling----------------*/
+
 #menu::before {
     content: "≡";
     background-color: var(--backgroundColor);
@@ -112,11 +117,16 @@ nav.show {
     width: 100%;
 }
 
+
+/*-----------------Home page Hero Image Styling----------------*/
+
 .heroImage {
     height: 20rem;
     background-color: var(--backgroundColor);
 }
 
+
+/*-----------------Home page section one styling----------------*/
 
 .sectionOne {
     margin: 3rem 0;
@@ -155,6 +165,8 @@ nav.show {
     color: var(--linerColor);
     font-weight: 600;
 }
+
+/*-----------------Home Page Section Two Styling----------------*/
 
 .sectionTwo {
     width: 90%;
@@ -212,6 +224,8 @@ nav.show {
     margin: 0px auto 8px;
 }
 
+/*-----------------Home Page Section Three Styling----------------*/
+
 .sectionThree {
     font-family: var(--headingsFont);
     color: var(--backgroundColor);
@@ -253,6 +267,8 @@ nav.show {
     border-radius: 10px;
 }
 
+/*-----------------Home Page Section Four styling----------------*/
+
 .sectionFour {
     background-color: var(--backgroundColor);
     color: white;
@@ -287,6 +303,9 @@ nav.show {
     width: fit-content;
 }
 
+
+/*-----------------Home Page Section Five styling----------------*/
+
 .sectionFive {
     padding: 6rem 0;
 }
@@ -316,6 +335,9 @@ nav.show {
     color: var(--linerColor);
     font-weight: 700;
 }
+
+
+/*-----------------Home Page Section Six styling----------------*/
 
 .sectionSix {
     border: 0.7rem solid var(--backgroundColor);
@@ -357,6 +379,8 @@ nav.show {
 }
 
 
+/*----------------- footer styling----------------*/
+
 footer {
     width: 100%;
     background-color: var(--backgroundColor);
@@ -384,4 +408,90 @@ footer p {
     font-size: 1.3rem;
     text-align: center;
     color: rgba(245, 245, 245, 0.479)
+}
+
+
+/*----------------Prices Page styling----------------*/
+
+.prices h1 {
+    font-family: var(--headingsFont);
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--backgroundColor);
+}
+
+
+
+/*-----------------Price Section one styling----------------*/
+
+.prices .pricesection1 {
+    font-family: var(--paragraphFont);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.prices .pricesection1 p{
+    padding: 1rem 0;
+}
+
+.prices .pricesection1 span{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--paragraphColor);
+}
+
+/*-----------------Price Section two styling----------------*/
+
+.prices .pricesection2 h2{
+    font-family: var(--headingsFont);
+    font-size: 2rem;
+    width: fit-content;
+    color: white;
+    background-color: var(--backgroundColor);
+    padding: 1rem;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+/*-----------------Price Section two form styling----------------*/
+
+
+.pricesection2 {
+    width: 100%;
+}
+
+
+.pricesection2 form {
+    width: clamp(10rem, 90%, 25rem);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: var(--paragraphColor)
+}
+
+.pricesection2 form fieldset {
+    font-family: var(--headingsFont);
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 30px 0;
+    border: none;
+    color: white;
+}
+
+.pricesection2 form fieldset label {
+    font-family: var(--paragraphFont);
+    font-size: 1.5rem;
+    display: block;
+    color: rgb(22, 6, 110);
+}
+
+.pricesection2 form input[type=button] {
+    font-family: var(--headingsFont);
+    font-size: 2rem;
+    margin: 1rem 0 1rem 2rem;
+    padding: 0.5rem;
+}
+
+.pricesection2 form p {
+    font-size: 1.5rem;
 }

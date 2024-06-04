@@ -14,6 +14,9 @@ function func() {
 
 
 const form = document.querySelector("form")
+const button = document.querySelector('#button')
+button.disabled = true;
+
 let categoryone = document.querySelector('#basic');
 let categorytwo = document.querySelector('#standard');
 let categorythree = document.querySelector('#elite');
@@ -33,101 +36,49 @@ let categoryPrice = 0;
 let paymentrate = 0;
 let hosting = 0;
 
-categoryone.addEventListener('click', function() {
-    categoryPrice = 150000;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
 
-categorytwo.addEventListener('click', function() {
-    categoryPrice = 300000;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
+categoryone.addEventListener('click', setCategoryPrice(150000))
+categorytwo.addEventListener('click', setCategoryPrice(300000))
+categorythree.addEventListener('click', setCategoryPrice(450000))
 
-categorythree.addEventListener('click', function() {
-    categoryPrice = 450000;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
+paymentone.addEventListener('click', setPaymentRate(1));
+paymenttwo.addEventListener('click', setPaymentRate(2));
+paymentthree.addEventListener('click', setPaymentRate(3));
+paymentfour.addEventListener('click', setPaymentRate(4));
 
-paymentone.addEventListener('click', function() {
-    paymentrate = 1;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
+oneyear.addEventListener('click', setHosting(1))
+twoyear.addEventListener('click', setHosting(2))
+threeyear.addEventListener('click', setHosting(3))
+fiveyear.addEventListener('click', setHosting(5))
 
-paymenttwo.addEventListener('click', function() {
-    paymentrate = 2;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
 
-paymentthree.addEventListener('click', function() {
-    paymentrate = 3;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
+function setHosting(number) {
+    hosting = number;
+    if (categoryPrice != 0 && paymentrate != 0 && hosting !=0) {
 
-paymentfour.addEventListener('click', function() {
-    paymentrate = 4;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
-
-oneyear.addEventListener('click', function() {
-    hosting = 1;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
-
-twoyear.addEventListener('click', function() {
-    hosting = 2;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
-    }
-})
-
-threeyear.addEventListener('click', function() {
-    hosting = 3;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
         
     }
-})
+}
+ 
 
-fiveyear.addEventListener('click', function() {
-    hosting = 5;
+function setPaymentRate(number) {
+    paymentrate = number;
     if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        submit.removeAttribute('disabled');
+        button.removeAttribute('disabled');
     }
-})
+}
+
+function setCategoryPrice(number) {
+    categoryPrice = number;
+    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
+        button.removeAttribute('disabled');
+    }
+}
 
 
+button.addEventListener('click', function() {
 
-
-const submit = document.querySelector('#submit')
-
-submit.disabled = true;
-
-
-
-submit.addEventListener('click', function() {
-
-
-
-    form.innerHTML = "";
-
-
-    let totalprice = categoryPrice + hosting * 50000;
+let totalprice = categoryPrice + hosting * 50000;
 let iniprice = 0.4 * totalprice;
 let remainder = 0.6 * totalprice;
 let installment;
@@ -150,23 +101,17 @@ if (paymentrate === 4) {
      installment = remainder / 4;
 }
 
-    let initial = document.createElement('p');
-    initial.innerHTML = `for hosting the site on the internet for <span>${hosting}</span>years
-    is <span>${hosting * 50000}</span>`;
+    const website = document.querySelector('#websitePrice');
+    website.textContent = categoryPrice / 1000;
 
-    let host = document.createElement('p');
-    host.innerHTML = `The fees for building the website is  <span>${categoryPrice}</span>`
+    const host = document.querySelector('#hosting');
+    host.textContent = hosting * 50;
 
     let total = document.createElement('p');
     total.innerHTML = `The total price for the website plus hosting is <span>${totalprice}</span>`;
 
     let installmen = document.createElement('p');
     installmen.textContent = installment;
-
-    form.append(host);
-    form.append(initial);
-    form.append(total);
-
     
 })
 
