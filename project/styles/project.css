@@ -418,6 +418,7 @@ footer p {
     font-size: 2.8rem;
     text-align: center;
     color: var(--backgroundColor);
+    margin-top: 30px;
 }
 
 
@@ -432,6 +433,7 @@ footer p {
 
 .prices .pricesection1 p{
     padding: 1rem 0;
+    color: var(--backgroundColor);
 }
 
 .prices .pricesection1 span{
@@ -462,7 +464,7 @@ footer p {
 
 
 .pricesection2 form {
-    width: clamp(10rem, 90%, 25rem);
+    width: clamp(5rem, 90%, 25rem);
     margin: 1rem auto;
     padding: 1.5rem;
     background-color: var(--paragraphColor)
@@ -480,7 +482,7 @@ footer p {
 
 .pricesection2 form fieldset label {
     font-family: var(--paragraphFont);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
     color: rgb(22, 6, 110);
 }
@@ -499,7 +501,7 @@ footer p {
 .pricesection3 table { 
     margin: 0 auto;
     font-family: var(--headingsFont);
-    width: clamp(10rem, 90%, 25rem);
+    width: clamp(5rem, 90%, 25rem);
 }
 
 
