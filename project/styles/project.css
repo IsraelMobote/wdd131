@@ -339,23 +339,23 @@ nav.show {
 
 /*-----------------Home Page Section Six styling----------------*/
 
-.sectionSix {
+.sectionSix, .pricesection5 {
     border: 0.7rem solid var(--backgroundColor);
     font-family: var(--headingsFont);
     padding: 2rem 0;
 }
 
-.sectionSix p {
+.sectionSix p, .pricesection5 p {
     font-size: 1.5rem;
     padding: 15px 20px;
 }
 
-.sectionSix p span {
+.sectionSix p span , .pricesection5 p span{
     color: var(--paragraphColor);
     font-weight: 700;
 }
 
-.sectionSix .button {
+.sectionSix .button, .pricesection5 .button {
     font-size: 1rem;
     background-color: var(--backgroundColor);
     color: white;
@@ -366,7 +366,7 @@ nav.show {
     justify-content: space-between;
 }
 
-.sectionSix .button a {
+.sectionSix .button a, .pricesection5 .button a {
     font-size: 1.5rem;
     color: white;
     z-index: 0;
@@ -499,9 +499,9 @@ footer p {
 }
 
 .pricesection3 table { 
-    margin: 0 auto;
+    margin: 0 auto 7rem;
     font-family: var(--headingsFont);
-    width: clamp(5rem, 90%, 25rem);
+    width: clamp(20px, 90%, 25rem);
 }
 
 
