@@ -37,43 +37,60 @@ let paymentrate = 0;
 let hosting = 0;
 
 
-categoryone.addEventListener('click', setCategoryPrice(150000))
-categorytwo.addEventListener('click', setCategoryPrice(300000))
-categorythree.addEventListener('click', setCategoryPrice(450000))
+categoryone.addEventListener('click', function() {
+    categoryPrice = 150000;
+    check();
+});
+categorytwo.addEventListener('click', function() {
+    categoryPrice = 300000;
+    check();
+});
+categorythree.addEventListener('click', function() {
+    categoryPrice = 450000;
+    check();
+});
 
-paymentone.addEventListener('click', setPaymentRate(1));
-paymenttwo.addEventListener('click', setPaymentRate(2));
-paymentthree.addEventListener('click', setPaymentRate(3));
-paymentfour.addEventListener('click', setPaymentRate(4));
+paymentone.addEventListener('click', function() {
+    paymentrate = 1;
+    check();
+});
+paymenttwo.addEventListener('click', function() {
+    paymentrate = 2;
+    check();
+});
+paymentthree.addEventListener('click', function() {
+    paymentrate = 3;
+    check();
+});
+paymentfour.addEventListener('click', function() {
+    paymentrate = 4;
+    check();
+});
 
-oneyear.addEventListener('click', setHosting(1))
-twoyear.addEventListener('click', setHosting(2))
-threeyear.addEventListener('click', setHosting(3))
-fiveyear.addEventListener('click', setHosting(5))
+oneyear.addEventListener('click', function() {
+    hosting = 1;
+    check();
+});
+twoyear.addEventListener('click', function() {
+    hosting = 2;
+    check();
+});
+threeyear.addEventListener('click', function() {
+    hosting = 3;
+    check();
+});
+fiveyear.addEventListener('click', function() {
+    hosting = 5;
+    check();
+});
 
 
-function setHosting(number) {
-    hosting = number;
+function check() {
     if (categoryPrice != 0 && paymentrate != 0 && hosting !=0) {
-
-        
-    }
-}
- 
-
-function setPaymentRate(number) {
-    paymentrate = number;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
         button.removeAttribute('disabled');
     }
 }
 
-function setCategoryPrice(number) {
-    categoryPrice = number;
-    if (categoryPrice != 0 && paymentrate != 0 && hosting!=0) {
-        button.removeAttribute('disabled');
-    }
-}
 
 
 button.addEventListener('click', function() {
@@ -83,21 +100,21 @@ let iniprice = 0.4 * totalprice;
 let remainder = 0.6 * totalprice;
 let installment;
 
-if (paymentrate === 2) {
+if (paymentrate === 1) {
+     installment = remainder
+}
+else if (paymentrate === 2) {
     remainder = remainder * 1.1;
-    totalprice = iniprice + remainder;
      installment = remainder / 2;
 }
 
-if (paymentrate === 3) {
+else if (paymentrate === 3) {
     remainder = remainder * 1.15;
-    totalprice = iniprice + remainder;
      installment = remainder / 3;
 }
 
-if (paymentrate === 4) {
+else if (paymentrate === 4) {
     remainder = remainder * 1.2;
-    totalprice = iniprice + remainder;
      installment = remainder / 4;
 }
 
@@ -107,12 +124,22 @@ if (paymentrate === 4) {
     const host = document.querySelector('#hosting');
     host.textContent = hosting * 50;
 
-    let total = document.createElement('p');
-    total.innerHTML = `The total price for the website plus hosting is <span>${totalprice}</span>`;
+    const total = document.querySelector('#total');
+    total.textContent =  totalprice / 1000;
 
-    let installmen = document.createElement('p');
-    installmen.textContent = installment;
-    
+    const init = document.querySelector('#initial');
+    init.textContent =  0.4 * totalprice /1000 ;
+
+    const installmen = document.querySelector('#monthlypayment')
+
+    if (paymentrate == 1) {
+        installmen.textContent =  `${(installment /1000).toFixed()},000 once after the 
+        website completion date`
+    }
+    else {
+    installmen.textContent = `${(installment /1000).toFixed()},000 once in a month for ${paymentrate} months after the 
+    website completion date`
+    }
 })
 
 

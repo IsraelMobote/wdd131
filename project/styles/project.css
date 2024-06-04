@@ -495,3 +495,25 @@ footer p {
 .pricesection2 form p {
     font-size: 1.5rem;
 }
+
+.pricesection3 table { 
+    margin: 0 auto;
+    font-family: var(--headingsFont);
+    width: clamp(10rem, 90%, 25rem);
+}
+
+
+.pricesection3 table tr th {
+    padding: 3rem 0 10px;
+    font-size: 1.5rem;
+}
+
+.pricesection3 table td {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+    
+}
+
+
