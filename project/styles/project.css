@@ -464,7 +464,7 @@ footer p {
 
 
 .pricesection2 form {
-    width: clamp(5rem, 90%, 25rem);
+    width: 80%;
     margin: 1rem auto;
     padding: 1.5rem;
     background-color: var(--paragraphColor)
@@ -501,7 +501,7 @@ footer p {
 .pricesection3 table { 
     margin: 0 auto 7rem;
     font-family: var(--headingsFont);
-    width: clamp(20px, 90%, 25rem);
+    width: 80%;
 }
 
 
@@ -513,8 +513,8 @@ footer p {
 .pricesection3 table td {
     font-size: 1.3rem;
     text-align: center;
-    width: 50%;
-    padding: 10px 0;
+    width: 40%;
+    padding: 10px 5px;
     
 }
 
