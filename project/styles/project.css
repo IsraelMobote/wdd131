@@ -519,4 +519,31 @@ footer p {
     
 }
 
+.pricesection4 {
+    margin: 3rem 0 4rem;
+}
+
+.pricesection4 h2 {
+    font-family: var(--headingsFont);
+    font-size: 1.7rem;
+    color: var(--backgroundColor);
+    padding-left: 20px;
+}
+
+.pricesection4 p {
+    font-family: var(--paragraphFont);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 20px;
+    color: var(--backgroundColor);
+
+}
+
+.pricesection4 p span {
+    font-family: var(--headingsFont);
+    color: var(--paragraphColor);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
