@@ -552,3 +552,106 @@ footer p {
 }
 
 
+/*-----------------four-way Section one form styling----------------*/
+
+#fourway-section1 {
+    color: var(--backgroundColor);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+#fourway-section1 h2 {
+    font-family: var(--headingsFont);
+    font-size: 2.3rem;
+    text-align: center; 
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+#fourway-section1 h2 span {
+    color: var(--linerColor);
+}
+
+
+#fourway-section1 p {
+    font-family: var(--paragraphFont);
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+}
+
+#fourway-section1:hover {
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 2rem 0.5rem;
+    margin-top: 4rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 10%;
+}
+
+
+
+/*-----------------four-way Section two styling----------------*/
+
+
+#fourway-section2 {
+    background-color: rgba(123, 123, 163, 0.541);
+    padding: 2rem 0;
+}
+
+#buttons {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#button1, #button2, #button3, #button4 {
+    width: 150px;
+    margin: 10px;
+    padding: 12px 0;
+    border-radius: 15px;
+    font-family: var(--headingsFont);
+    font-size: 1.5rem;
+}
+
+#fourway-section2 > h2 {
+    font-family: var(--headingsFont);
+    font-size: 2.3rem;
+    padding: 30px 30px 5px;
+    color: var(--backgroundColor);
+}
+
+#fourway-section2 > .liner {
+    background-color: var(--linerColor);
+    padding: 3px 0;
+    width: 17%;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+#fourway-section2 > p {
+    font-family: var(--paragraphFont);
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#fourway-section2 > img {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
