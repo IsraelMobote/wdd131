@@ -28,6 +28,7 @@ const products = [
 
   const selectElement = document.querySelector("#productName");
 
+
   function appendListItems(product) {
     const option = document.createElement("option");
     option.innerHTML = product.name;
@@ -38,4 +39,29 @@ const products = [
   products.forEach((prod) =>
     appendListItems(prod)
   );
+
+
+
+  localStorage.setItem("totalReviews", "5");
+  let totalReview = JSON.parse(localStorage.getItem("totalReviews"));
+
+
+  document.querySelector("#submit").addEventListener('click', func);
+   
+  function func() {
+  totalReview = totalReview + 1;
+  localStorage.setItem("totalReviews",totalReview);
+  }
+
+  console.log(totalReview)
+
+  
+  
+
+  
+
+
+ 
+
+ 
 
