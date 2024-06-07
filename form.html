@@ -25,26 +25,26 @@
             </label>
             <fieldset id="test">
                 <legend>Overall Rating <span class="indicator"> *</span></legend>
-                <label>⭐<input type="radio" name="rating" required></label>
-                <label>⭐⭐<input type="radio" name="rating" required></label>
-                <label>⭐⭐⭐<input type="radio" name="rating" required></label>
-                <label>⭐⭐⭐⭐<input type="radio" name="rating" required></label>
-                <label>⭐⭐⭐⭐⭐<input type="radio" name="rating" required></label>
+                <label>⭐<input type="radio" id="ratingone" name="rating" required></label>
+                <label>⭐⭐<input type="radio" id="ratingtwo" name="rating" required></label>
+                <label>⭐⭐⭐<input type="radio" id="ratingthree" name="rating" required></label>
+                <label>⭐⭐⭐⭐<input type="radio" id="ratingfour" name="rating" required></label>
+                <label>⭐⭐⭐⭐⭐<input type="radio" id="ratingfive" name="rating" required></label>
             </fieldset>
             <label>Date of Installation <span class="indicator"> *</span>
-                <input type="date" name="dateOfInstallation" required>
+                <input type="date" id="dateOfInstallation" name="dateOfInstallation" required>
             </label>
             <fieldset>
                 <legend>Which features did you find useful in the product?</legend>
                 <div id="italic">(check all that apply)</div>
-                <label class="radio"><input type="checkbox" name="durability">Durability</label>
-                <label class="radio"><input type="checkbox" name="easeOfUse">Ease of Use</label>
-                <label class="radio"><input type="checkbox" name="performance">Performance</label>
-                <label class="radio"><input type="checkbox" name="design">Design</label>
+                <label class="radio"><input type="checkbox" id="durability" name="durability">Durability</label>
+                <label class="radio"><input type="checkbox" id="easeOfUse" name="easeOfUse">Ease of Use</label>
+                <label class="radio"><input type="checkbox"  id="performance" name="performance">Performance</label>
+                <label class="radio"><input type="checkbox" id="design" name="design">Design</label>
             </fieldset>
             <label>Written Review<span>(optional)</span>
                 <textarea name="review" id="review"></textarea></label>
-            <label>Your Name<span>(optional)</span><input type="text" name="yourname"></label>
+            <label>Your Name<span>(optional)</span><input type="text" id="yourname" name="yourname"></label>
             <input type="submit" id="submit" name="submit" value="Post Review">
 
         </form>

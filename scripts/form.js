@@ -40,9 +40,10 @@ const products = [
     appendListItems(prod)
   );
 
-  let totalReview = localStorage.getItem("totalReviews") || 0;
+  let totalReview = JSON.parse(localStorage.getItem("totalReviews")) || 0;
   document.querySelector("#submit").addEventListener('click', function() {
     totalReview = totalReview + 1;
     localStorage.setItem("totalReviews",totalReview);
     });
    
+
