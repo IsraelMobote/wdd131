@@ -13,7 +13,7 @@ header {
 }
 
 form {
-    background-color: rgba(83, 73, 170, 0.445);
+    background-color: rgba(145, 137, 199, 0.445);
     padding: 5%;
     width: 90%;
     max-width: 500px;
@@ -27,7 +27,7 @@ form {
     font-weight: 300;
     text-align: center;
     margin-bottom: 2rem;
-    color: red;
+    color: rgb(29, 17, 63);
 }
 
 label{
