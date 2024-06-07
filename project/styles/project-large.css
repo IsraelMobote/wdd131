@@ -158,13 +158,38 @@
         }
 
         /*--------------project large view-------------*/
+
+
+        .sectionThree {
+            text-align: center;
+        }
+        
+        .sectionThree .liner {
+            margin: 0 auto 1rem;
+        }
+
+        .sectionTwo {
+            width: 90%;
+            margin: 3rem auto;
+            height: 25rem;
+        }
+        
+        .sectionTwo div {
+            width: 95%;
+            margin: 0 auto;
+            height: 25rem;
+        }
+
+        #offering {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
         #projectGrid2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 2rem;
         }
-
-
         /*---------------footer large view-------------*/
         footer {
             width: 100%;
