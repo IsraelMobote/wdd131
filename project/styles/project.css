@@ -309,19 +309,19 @@ nav.show {
 }
 
 
-/*-----------------Home Page Section Five styling----------------*/
+/*-----------------Home Page Common Section1 styling----------------*/
 
-.sectionFive {
+.commonSection1 {
     padding: 6rem 0;
 }
-.sectionFive h2{
+.commonSection1  h2{
     font-family: var(--headingsFont);
     font-size: 1.9rem;
     color: var(--linerColor);
     padding: 10px 20px 4px;
 }
 
-.sectionFive .liner {
+.commonSection1 .liner {
     width: 30%;
     background-color: var(--backgroundColor);
     height: 0.4rem;
@@ -330,37 +330,37 @@ nav.show {
     margin-bottom: 1rem;
 }
 
-.sectionFive p {
+.commonSection1 p {
     font-family: var(--paragraphFont);
     font-size: 1.5rem;
     padding: 15px 20px;
 }
 
-.sectionFive p span {
+.commonSection1  p span {
     color: var(--linerColor);
     font-weight: 700;
 }
 
 
-/*-----------------Home Page Section Six styling----------------*/
+/*-----------------Home Page common section2 styling----------------*/
 
-.sectionSix, .pricesection5 {
+.commonSection2 {
     border: 0.7rem solid var(--backgroundColor);
     font-family: var(--headingsFont);
     padding: 2rem 0;
 }
 
-.sectionSix p, .pricesection5 p {
+.commonSection2 p{
     font-size: 1.5rem;
     padding: 15px 20px;
 }
 
-.sectionSix p span , .pricesection5 p span{
+.commonSection2 p span{
     color: var(--paragraphColor);
     font-weight: 700;
 }
 
-.sectionSix .button, .pricesection5 .button {
+.commonSection2 .button {
     font-size: 1rem;
     background-color: var(--backgroundColor);
     color: white;
@@ -371,7 +371,7 @@ nav.show {
     justify-content: space-between;
 }
 
-.sectionSix .button a, .pricesection5 .button a {
+.commonSection2  .button a{
     font-size: 1.5rem;
     color: white;
     z-index: 0;
@@ -639,6 +639,18 @@ footer p {
     width: 50%;
     height: auto;
     margin: 0 25%;
+}
+
+#fourway-section3 {
+    font-family: var(--paragraphFont);
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 4rem 30px 6rem;
+}
+
+#fourway-section3 > p {
+    font-size: 1.7rem;
+    margin-top: 2rem;
 }
 
 

@@ -47,9 +47,9 @@ const stages = [{
     Your website will be ready at this stage and it will be shown and demonstrated to you by your assigned
     support agent. If you have any suggestions for change, feel free to tell our support agent and it will
     be implemented on the website. For your website to go live on the Internet, you will have to pay 
-    your remaining balance(60% of the total cost) or the first month payment of your installment plan if you
+    your remaining balance(60% of the total cost) or the first month of your installment plan if you
     decide to pay by installments. After this, your website will be hosted on the Internet and it will be
-    accessible for anyone on the internet to see and use.`,
+    accessible for anyone on the internet to see and use`,
     icon: `icons/icon-for-completion-stage.png`,
     iconAlt: "icon-for-completion-stage",
     priceInformation : ""
