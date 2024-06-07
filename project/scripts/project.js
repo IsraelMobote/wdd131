@@ -14,7 +14,7 @@ function func() {
 
 
 const form = document.querySelector("form")
-const button = document.querySelector('#button')
+const buttn = document.querySelector('#button')
 button.disabled = true;
 
 let categoryone = document.querySelector('#basic');
@@ -141,8 +141,5 @@ else if (paymentrate === 4) {
     website completion date`
     }
 })
-
-
-
 
 
