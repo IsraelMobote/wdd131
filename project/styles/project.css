@@ -613,14 +613,14 @@ footer p {
     font-size: 1.5rem;
 }
 
-#fourway-section2 > h2 {
+#fourway-section2 > div >div >h2 {
     font-family: var(--headingsFont);
     font-size: 2.3rem;
     padding: 30px 30px 5px;
     color: var(--backgroundColor);
 }
 
-#fourway-section2 > .liner {
+#fourway-section2 > div >div > .liner {
     background-color: var(--linerColor);
     padding: 3px 0;
     width: 17%;
@@ -628,14 +628,14 @@ footer p {
     margin-top: 0;
 }
 
-#fourway-section2 > p {
+#fourway-section2 > div >div > p {
     font-family: var(--paragraphFont);
     font-size: 1.5rem;
     width: 80%;
     margin: 2rem auto;
 }
 
-#fourway-section2 > img {
+#fourway-section2 > div> img {
     width: 50%;
     height: auto;
     margin: 0 25%;

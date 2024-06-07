@@ -135,7 +135,37 @@
             border-left: 0;
             border-right: 0;
         }
+
+        /*---------------four way large view-------------*/
+
+        #fourway-section2 > div > img {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            padding-top: 4rem;
+        }
         
+        #fourwayGrid1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 2rem;
+        }
+
+        #fourwayGrid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem;
+        }
+
+        /*--------------project large view-------------*/
+        #projectGrid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem;
+        }
+
+
+        /*---------------footer large view-------------*/
         footer {
             width: 100%;
             background-color: var(--backgroundColor);
