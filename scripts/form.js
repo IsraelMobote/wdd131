@@ -40,23 +40,9 @@ const products = [
     appendListItems(prod)
   );
 
-
-  let totalReview = JSON.parse(localStorage.getItem("totalReviews")) || 0;
-  document.querySelector("#submit").addEventListener('click', func);
+  let totalReview = localStorage.getItem("totalReviews") || 0;
+  document.querySelector("#submit").addEventListener('click',   function() {
+    totalReview = totalReview + 1;
+    localStorage.setItem("totalReviews",totalReview);
+    });
    
-  function func() {
-  totalReview = totalReview + 1;
-  localStorage.setItem("totalReviews",totalReview);
-  }
-
-
-  
-  
-
-  
-
-
- 
-
- 
-
