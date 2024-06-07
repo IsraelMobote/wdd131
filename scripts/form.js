@@ -42,12 +42,6 @@ const products = [
 
 
   let totalReview = JSON.parse(localStorage.getItem("totalReviews")) || 0;
-
- 
-  
-  
-
-
   document.querySelector("#submit").addEventListener('click', func);
    
   function func() {
@@ -55,7 +49,6 @@ const products = [
   localStorage.setItem("totalReviews",totalReview);
   }
 
-  console.log(totalReview)
 
   
   
