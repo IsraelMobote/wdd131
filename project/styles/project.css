@@ -579,14 +579,11 @@ footer p {
     text-align: center;
 }
 
-#fourway-section1:hover {
+#fourway-section1 > h2:hover {
     background-color: var(--backgroundColor);
     color: white;
-    padding: 2rem 0.5rem;
-    margin-top: 4rem;
-    width: 90%;
-    margin: 1rem auto;
-    border-radius: 10%;
+    border-radius: 3rem;
+    margin: 0 10%;
 }
 
 
