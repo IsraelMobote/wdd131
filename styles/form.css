@@ -21,6 +21,15 @@ form {
     border: 1px solid black;
 }
 
+
+.indicator {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: red;
+}
+
 label{
     padding: 5px 10px;
     color: black;

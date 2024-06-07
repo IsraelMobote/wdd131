@@ -17,34 +17,35 @@
     </header>
     <main>
         <form class="form" method="get" action="review.html">
-            <label>Product Name*
+            <h3 class="indicator"> * means that the field is required</h3>
+            <label>Product Name <span class="indicator"> *</span>
                 <select name="productName" id="productName" required>
                     <option value="" disabled selected>Choose a Product ....</option>
                 </select>
             </label>
             <fieldset id="test">
-                <legend>Overall Rating*</legend>
+                <legend>Overall Rating <span class="indicator"> *</span></legend>
                 <label>⭐<input type="radio" name="rating" required></label>
                 <label>⭐⭐<input type="radio" name="rating" required></label>
                 <label>⭐⭐⭐<input type="radio" name="rating" required></label>
                 <label>⭐⭐⭐⭐<input type="radio" name="rating" required></label>
                 <label>⭐⭐⭐⭐⭐<input type="radio" name="rating" required></label>
             </fieldset>
-            <label>Date of Installation*
-                <input type="date" required>
+            <label>Date of Installation <span class="indicator"> *</span>
+                <input type="date" name="dateOfInstallation" required>
             </label>
             <fieldset>
                 <legend>Which features did you find useful in the product?</legend>
                 <div id="italic">(check all that apply)</div>
-                <label class="radio"><input type="checkbox">Durability</label>
-                <label class="radio"><input type="checkbox">Ease of Use</label>
-                <label class="radio"><input type="checkbox">Performance</label>
-                <label class="radio"><input type="checkbox">Design</label>
+                <label class="radio"><input type="checkbox" name="durability">Durability</label>
+                <label class="radio"><input type="checkbox" name="ease of use">Ease of Use</label>
+                <label class="radio"><input type="checkbox" name="performance">Performance</label>
+                <label class="radio"><input type="checkbox" name="design">Design</label>
             </fieldset>
             <label>Written Review<span>(optional)</span>
                 <textarea name="review" id="review"></textarea></label>
             <label>Your Name<span>(optional)</span><input type="text"></label>
-            <input type="submit" value="Post Review">
+            <input type="submit" name="submit" value="Post Review">
 
         </form>
     </main>
