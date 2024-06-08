@@ -17,8 +17,7 @@ const stages = [{
     website. This support agent will guide you through our interactive process from start to Website
      completion`,
     icon: `icons/icon-for-meet-stage.png`,
-    iconAlt: "icon-for-meet-stage",
-    priceInformation : ""
+    iconAlt: "icon-for-meet-stage"
 }, 
 {
     name : "Design",
@@ -27,9 +26,7 @@ const stages = [{
     audience, after you have agreed on a design plan for the website, you will be required to pay 40% 
     of the website total cost to start and finish the website`,
     icon: `icons/icon-for-design-stage.png`,
-    iconAlt: "icon-for-design-stage",
-    priceInformation : `view the <a href='prices.html'>pricing</a> section to calculate the 40% initial cost for your
-    website`
+    iconAlt: "icon-for-design-stage"
 },
 {
     name : "Develop",
@@ -38,8 +35,7 @@ const stages = [{
      If there is any need for pictures on the site, our photographers will get in touch 
     with you to discuss on how to provide those images. So Relax, We have got you covered.`,
     icon: `icons/icon-for-develop-stage.png`,
-    iconAlt: "icon-for-develop-stage",
-    priceInformation : ""
+    iconAlt: "icon-for-develop-stage"
 },
 {
     name : "Completion",
@@ -51,8 +47,7 @@ const stages = [{
     decide to pay by installments. After this, your website will be hosted on the Internet and it will be
     accessible for anyone on the internet to see and use`,
     icon: `icons/icon-for-completion-stage.png`,
-    iconAlt: "icon-for-completion-stage",
-    priceInformation : ""
+    iconAlt: "icon-for-completion-stage"
 }
 
 ]

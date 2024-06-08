@@ -37,52 +37,35 @@ let paymentrate = 0;
 let hosting = 0;
 
 
-categoryone.addEventListener('click', function() {
-    categoryPrice = 150000;
-    check();
-});
-categorytwo.addEventListener('click', function() {
-    categoryPrice = 300000;
-    check();
-});
-categorythree.addEventListener('click', function() {
-    categoryPrice = 450000;
-    check();
-});
+categoryone.addEventListener('click', function() { setCategory(150000) });
+categorytwo.addEventListener('click', function() { setCategory(300000) });
+categorythree.addEventListener('click', function() { setCategory(450000) });
 
-paymentone.addEventListener('click', function() {
-    paymentrate = 1;
-    check();
-});
-paymenttwo.addEventListener('click', function() {
-    paymentrate = 2;
-    check();
-});
-paymentthree.addEventListener('click', function() {
-    paymentrate = 3;
-    check();
-});
-paymentfour.addEventListener('click', function() {
-    paymentrate = 4;
-    check();
-});
+paymentone.addEventListener('click', function() { setPayment(1) });
+paymenttwo.addEventListener('click', function() { setPayment(2) });
+paymentthree.addEventListener('click', function() { setPayment(3) });
+paymentfour.addEventListener('click', function() { setPayment(4) });
 
-oneyear.addEventListener('click', function() {
-    hosting = 1;
+oneyear.addEventListener('click', function() { setHosting(1) });
+twoyear.addEventListener('click', function() { setHosting(2) });
+threeyear.addEventListener('click', function() { setHosting(3) });
+fiveyear.addEventListener('click', function() { setHosting(5) });
+
+function setCategory(num) { 
+    categoryPrice = num;
     check();
-});
-twoyear.addEventListener('click', function() {
-    hosting = 2;
+}
+
+function setPayment(num) { 
+    paymentrate = num;
     check();
-});
-threeyear.addEventListener('click', function() {
-    hosting = 3;
+}
+
+function setHosting(num) { 
+    hosting = num;
     check();
-});
-fiveyear.addEventListener('click', function() {
-    hosting = 5;
-    check();
-});
+}
+
 
 
 function check() {

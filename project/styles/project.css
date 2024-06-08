@@ -82,7 +82,7 @@ nav a {
 }
 
 #green {
-    color: rgb(67, 184, 13);
+    color: var(--linerColor);
 }
 
 
@@ -652,15 +652,3 @@ footer p {
     font-size: 1.7rem;
     margin-top: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
