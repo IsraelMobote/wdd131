@@ -1,14 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-
 * {
     padding: 0;
     margin: 0;
 }
 
 :root {
-    --headingsFont: 'Old Standard TT', Arial, Helvetica, sans-serif;
-    --paragraphFont: 'Exo 2', 'Times New Roman', serif;
+    --headingsFont:  Arial, Helvetica, sans-serif;
+    --paragraphFont: 'Times New Roman', Times, serif;
     --paragraphColor: rgba(165, 102, 8, 0.986);
     --backgroundColor: rgb(24, 24, 95);
     --linerColor: rgba(39, 107, 7, 0.986);
@@ -116,14 +114,6 @@ nav.show {
     top: 100px;
     position: fixed;
     width: 100%;
-}
-
-
-/*-----------------Home page Hero Image Styling----------------*/
-
-.heroImage {
-    height: 20rem;
-    background-color: var(--backgroundColor);
 }
 
 

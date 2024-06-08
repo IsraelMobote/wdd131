@@ -1,6 +1,5 @@
 @media screen and (min-width: 55rem)
 {
-    @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
     * {
@@ -9,8 +8,8 @@
     }
 
     :root {
-    --headingsFont: 'AR One Sans', Arial, Helvetica, sans-serif;
-    --paragraphFont: 'Noto Serif', 'Times New Roman', serif;
+    --headingsFont: Arial, Helvetica, sans-serif;
+    --paragraphFont: 'Times New Roman', Times, serif;
     --paragraphColor: rgba(165, 102, 8, 0.986);
     --backgroundColor: rgb(24, 24, 95);
     --linerColor: rgba(39, 107, 7, 0.986);
