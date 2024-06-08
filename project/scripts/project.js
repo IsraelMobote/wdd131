@@ -11,3 +11,7 @@ function func() {
     navi.classList.toggle("show");
 }
 
+let visits = JSON.parse(localStorage.getItem("totalVisits")) || 0;
+
+visits += 1
+localStorage.setItem("totalVisits", visits)
